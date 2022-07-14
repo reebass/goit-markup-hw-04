@@ -1,0 +1,390 @@
+:root {
+  /* fonts */
+  --fonts-main: "Roboto", sans-serif;
+  --fonts-logo: "Raleway", sans-serif;
+  /* text colors */
+  --text-main-cl: #212121;
+  --text-second-cl: #757575;
+  --text-accent-cl: #2196f3;
+  --text-white-cl: #ffffff;
+  --text-nav-cl: #000000;
+  --footer-mail-phone-cl: rgba(255, 255, 255, 0.6);
+  --btn-hover: #188ce8;
+  /* bg colors */
+  --dark-bg-cl: #2f303a;
+  --light-bg-cl: #f5f4fa;
+  /* others */
+  --border-color: #eeeeee;
+}
+
+body {
+  font-family: var(--fonts-main);
+  color: var(--text-main-cl);
+}
+
+/* reser styles */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* base style */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.btn {
+  min-width: 200px;
+  min-height: 50px;
+  padding: 6px 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  background-color: var(--text-accent-cl);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--text-white-cl);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--btn-hover);
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.features-list,
+.about-list,
+.team-list,
+.products-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* header */
+
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--border-color);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  font-family: var(--fonts-logo);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--text-nav-cl);
+  margin-right: 93px;
+}
+
+.header-logo > span {
+  color: var(--text-accent-cl);
+}
+
+.header-nav {
+  margin-right: auto;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-link {
+  display: block;
+  color: var(--text-nav-cl);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-link:focus,
+.header-link:hover,
+.header-link-current,
+.header-contacts:focus,
+.header-contacts:hover {
+  color: var(--text-accent-cl);
+}
+
+.header-contacts {
+  display: block;
+  color: var(--text-second-cl);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-mail {
+  margin-right: 50px;
+}
+
+/* PAGE STUDIA */
+
+/* section hero  */
+
+.hero {
+  background-color: var(--dark-bg-cl);
+}
+
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-white-cl);
+  text-align: center;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+/* section features */
+.features-list .about-list .team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.feature-item {
+  flex-basis: 270px;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.feature-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--text-second-cl);
+}
+
+/* About */
+
+.about {
+  padding-top: 0;
+}
+
+/* Our team */
+
+.team {
+  background-color: var(--light-bg-cl);
+}
+
+.team-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--text-white-cl);
+}
+
+.team-name {
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team-post {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--text-second-cl);
+  text-align: center;
+}
+
+/* footer */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-bg-cl);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  font-family: var(--fonts-logo);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--text-white-cl);
+}
+
+.footer-logo > span {
+  color: var(--text-accent-cl);
+}
+
+.footer-address {
+  margin-bottom: 9px;
+  font-style: normal;
+  color: var(--text-white-cl);
+}
+
+.footer-contact {
+  display: block;
+  font-style: normal;
+  color: var(--footer-mail-phone-cl);
+}
+
+.footer-contact:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contact:focus,
+.footer-contact:hover {
+  color: var(--text-white-cl);
+}
+
+/* Если класс "footer-adress" дать тегу 
+adress такой вариант можно использовать? 
+Или лучше нет ?
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  width: 231px;
+  font-style: normal;
+  color: var(--text-white-cl);
+} */
+
+/* PAGE PORTFOLIO */
+.portfolio-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-filter-btn {
+  font-family: inherit;
+  color: inherit;
+  background-color: var(--light-bg-cl);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.portfolio-filter-btn-activ,
+.portfolio-filter-btn:hover,
+.portfolio-filter-btn:focus {
+  background-color: var(--text-accent-cl);
+  color: var(--text-white-cl);
+}
+
+.products-wrapper {
+  padding: 20px 24px;
+  background-color: var(--text-white-cl);
+  border: 1px solid var(--border-color);
+  border-top: none;
+}
+
+.products-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.products-direction {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--text-second-cl);
+}
