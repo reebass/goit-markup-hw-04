@@ -15,6 +15,8 @@
   --light-bg-cl: #f5f4fa;
   /* others */
   --border-color: #eeeeee;
+  --icon-color: #afb1b8;
+  --footer-socials-bg: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -251,10 +253,18 @@ p {
   background-color: var(--light-bg-cl);
 }
 
+.team-item {
+  background-color: var(--text-white-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  /* outline: 1px solid red; */
+}
+
 .team-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: var(--text-white-cl);
 }
 
 .team-name {
@@ -273,6 +283,65 @@ p {
   letter-spacing: 0.03em;
   color: var(--text-second-cl);
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--text-white-cl);
+  border-radius: 50%;
+  color: var(--icon-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--text-white-cl);
+  background-color: var(--text-accent-cl);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+/* Clients section */
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  color: var(--icon-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--text-accent-cl);
+  color: var(--text-accent-cl);
+}
+
+.clients-icon {
+  fill: currentColor;
 }
 
 /* footer */
@@ -323,18 +392,29 @@ p {
   color: var(--text-white-cl);
 }
 
-/* Если класс "footer-adress" дать тегу 
-adress такой вариант можно использовать? 
-Или лучше нет ?
-
-.footer-address {
+.footer-container {
   display: flex;
-  flex-direction: column;
-  gap: 9px;
-  width: 231px;
-  font-style: normal;
+  align-items: baseline;
+}
+
+.social-footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--text-white-cl);
-} */
+  margin-bottom: 20px;
+}
+
+.social-footer {
+  margin-left: 70px;
+}
+
+.footer-social-link {
+  background-color: var(--footer-socials-bg);
+  color: var(--text-white-cl);
+}
 
 /* PAGE PORTFOLIO */
 .portfolio-filter {
