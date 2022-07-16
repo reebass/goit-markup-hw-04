@@ -172,19 +172,38 @@ p {
 }
 
 .header-contacts {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   color: var(--text-second-cl);
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.mail-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
 
 .header-mail {
   margin-right: 50px;
+}
+
+.header-mail::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../images/icons/mail.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* outline: 1px solid red; */
+}
+
+.header-phone::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/icons/phone.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* PAGE STUDIA */
@@ -491,6 +510,9 @@ p {
 .portfolio-filter-btn:focus {
   background-color: var(--text-accent-cl);
   color: var(--text-white-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .products-wrapper {
@@ -514,4 +536,14 @@ p {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--text-second-cl);
+}
+
+.products-link {
+  display: block;
+}
+
+.products-link:hover,
+.products-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
