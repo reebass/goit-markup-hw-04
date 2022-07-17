@@ -172,38 +172,19 @@ p {
 }
 
 .header-contacts {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   color: var(--text-second-cl);
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 
 .header-mail {
   margin-right: 50px;
-}
-
-.header-mail::before {
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url(../images/icons/mail.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* outline: 1px solid red; */
-}
-
-.header-phone::before {
-  content: "";
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../images/icons/phone.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* PAGE STUDIA */
